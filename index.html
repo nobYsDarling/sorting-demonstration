@@ -10,42 +10,82 @@
 
     <script language="JavaScript" src="dist/vendor.js"></script>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
     <link href="dist/styles.css" rel="stylesheet">
 </head>
 
-<body class="text-center" ng-controller="SortingDemonstrationController">
+<body ng-controller="SortingDemonstrationController">
 
-<div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
-    <header class="masthead">
-        <div class="inner">
-            <button id="button_fast_backward" type="button" class="btn btn-default btn-md" ng-click="fastBackward();">
-                <span class="glyphicon glyphicon-fast-backward"></span>
-            </button>
-            <button id="button_backward" type="button" class="btn btn-default btn-md" ng-click="backward();">
-                <span class="glyphicon glyphicon glyphicon-backward"></span>
-            </button>
-            <button id="button_play_pause" type="button" class="btn btn-default btn-md" ng-click="play();">
-                <span class="glyphicon glyphicon-play"></span>
-            </button>
-            <button id="button_forward" type="button" class="btn btn-default btn-md" ng-click="forward();">
-                <span class="glyphicon glyphicon glyphicon-forward"></span>
-            </button>
-            <button id="button_fast_forward" type="button" class="btn btn-default btn-md" ng-click="fastForward();">
-                <span class="glyphicon glyphicon-fast-forward"></span>
-            </button>
+<div class="container-fluid">
+    <header class="sd-header">
+        <div class="row">
+            <div class="col-md-4 d-none d-md-block text-left sd-git-link">
+                <a href="https://github.com/nobYsDarling" target="_blank"><img src="assets/images/github/GitHub-Mark-32px.png"></a>
+                <span>nobYsDarling</span>
+            </div>
+
+            <div class="col-md-4 col-sm-12 sd-controls">
+                <button id="button_fast_backward" type="button" class="btn btn-light sd-icon-btn" ng-click="fastBackward();">
+                    <span class="material-icons">fast_rewind</span>
+                </button>
+                <button id="button_backward" type="button" class="btn btn-light sd-icon-btn" ng-click="backward();">
+                    <span class="material-icons">skip_previous</span>
+                    <span class="glyphicon glyphicon glyphicon-backward"></span>
+                </button>
+                <button id="button_play_pause" type="button" class="btn btn-light sd-icon-btn" ng-click="play();">
+                    <span class="material-icons">play_arrow</span>
+                    <span class="glyphicon glyphicon-play"></span>
+                </button>
+                <button id="button_forward" type="button" class="btn btn-light sd-icon-btn" ng-click="forward();">
+                    <span class="material-icons">skip_next</span>
+                    <span class="glyphicon glyphicon glyphicon-forward"></span>
+                </button>
+                <button id="button_fast_forward" type="button" class="btn btn-light sd-icon-btn" ng-click="fastForward();">
+                    <span class="material-icons">fast_forward</span>
+                    <span class="glyphicon glyphicon-fast-forward"></span>
+                </button>
+            </div>
+
+            <div class="col-md-4 d-none d-md-block text-right">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main role="main" class="inner cover">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <chart algorithm="'bubble_sort'" frames="bubble_sort_frames"></chart>
-                </div>
-                <div class="col-sm">
-                    <chart algorithm="'merge_sort'" frames="merge_sort_frames"></chart>
-                </div>
+    <main role="main" class="sd-main">
+        <div class="row">
+            <div class="col-sm-12">
+                <img style="width: inherit" src="https://dummyimage.com/800x600/7a6a6a/fff&text=1" />
             </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <img style="width: inherit" src="https://dummyimage.com/800x600/7a6a6a/fff&text=1" />
+            </div>
+            <div class="col-sm-6">
+                <img style="width: inherit" src="https://dummyimage.com/800x600/7a6a6a/fff&text=2" />
+            </div>
+            <div class="col-sm-6">
+                <img style="width: inherit" src="https://dummyimage.com/800x600/7a6a6a/fff&text=3" />
+            </div>
+            <div class="col-sm-6">
+                <img style="width: inherit" src="https://dummyimage.com/800x600/7a6a6a/fff&text=4" />
+            </div>
+            <div class="col-sm-6">
+                <img style="width: inherit" src="https://dummyimage.com/800x600/7a6a6a/fff&text=5" />
+            </div>
+            <div class="col-sm-6">
+                <img style="width: inherit" src="https://dummyimage.com/800x600/7a6a6a/fff&text=6" />
+            </div>
+            <div class="col-sm-6">
+                <img style="width: inherit" src="https://dummyimage.com/800x600/7a6a6a/fff&text=7" />
+            </div>
+        </div>
+
         </div>
     </main>
 

@@ -1,54 +1,49 @@
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
+.sd-header {
+    margin-bottom: 3rem;
+    position:      fixed;
+    width:         100%;
+    z-index:       100;
 }
 
-/*
- * Base structure
- */
-
-html,
-body {
-  height: 100%;
-  background-color: #333;
+.sd-header .row {
+    height:     3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-body {
-  display: -ms-flexbox;
-  display: flex;
-  color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+.sd-header .row button {
+    margin-top: 0.3rem;
 }
 
-.cover-container {
-  width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.sd-header .row .sd-git-link {
+    padding-top: 0.5rem;
 }
 
-/*
- * Header
- */
-.masthead {
-  margin-bottom: 2rem;
+.sd-header .row .sd-git-link span {
+    vertical-align: middle;
 }
 
-/*
- * Cover
- */
-.cover {
-  padding: 0 1.5rem;
+.sd-header .row .sd-controls {
+    text-align:  center;
+    white-space: nowrap;
 }
 
+.sd-main {
+    margin-top: 1rem;
+}
 
-/*
- * Chart
- */
-.chart {
-  width: 100% !important;
-  margin: 0 auto;
-  display: block;
+button.sd-icon-btn {
+    line-height: 0;
+}
+
+.progress {
+    height:      0.3rem;
+    margin-top:  1.3rem;
+    margin-left: 1rem;
+}
+
+@media (min-width: 768px) {
+    .sd-header .row .sd-controls {
+        text-align:  center;
+        white-space: nowrap;
+    }
 }

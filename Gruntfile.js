@@ -16,6 +16,7 @@ module.exports = function(grunt) {
                     'node_modules/glyphicons/styles/glyphicons.css',
                     'node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css',
                     'node_modules/highcharts/css/highcharts.css',
+                    'node_modules/material-icons/css/material-icons.min.css',
                     'src/css/styles.css'
                 ],
                 dest: 'dist/styles.css'
