@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" ng-app="sortingDemonstration">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cover Template for Bootstrap</title>
+
+    <script language="JavaScript" src="dist/vendor.js"></script>
+
+    <link href="dist/styles.css" rel="stylesheet">
+</head>
+
+<body class="text-center" ng-controller="SortingDemonstrationController">
+
+<div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
+    <header class="masthead">
+        <div class="inner">
+            <button id="button_fast_backward" type="button" class="btn btn-default btn-md" ng-click="fastBackward();">
+                <span class="glyphicon glyphicon-fast-backward"></span>
+            </button>
+            <button id="button_backward" type="button" class="btn btn-default btn-md" ng-click="backward();">
+                <span class="glyphicon glyphicon glyphicon-backward"></span>
+            </button>
+            <button id="button_play_pause" type="button" class="btn btn-default btn-md" ng-click="play();">
+                <span class="glyphicon glyphicon-play"></span>
+            </button>
+            <button id="button_forward" type="button" class="btn btn-default btn-md" ng-click="forward();">
+                <span class="glyphicon glyphicon glyphicon-forward"></span>
+            </button>
+            <button id="button_fast_forward" type="button" class="btn btn-default btn-md" ng-click="fastForward();">
+                <span class="glyphicon glyphicon-fast-forward"></span>
+            </button>
+        </div>
+    </header>
+
+    <main role="main" class="inner cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <chart algorithm="'bubble_sort'" frames="bubble_sort_frames"></chart>
+                </div>
+                <div class="col-sm">
+                    <chart algorithm="'merge_sort'" frames="merge_sort_frames"></chart>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</div>
+
+<script language="javascript" type="text/javascript" src="dist/scripts.js"></script>
+</body>
+</html>

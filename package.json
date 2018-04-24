@@ -1,0 +1,25 @@
+{
+  "author": "nobYsDarling",
+  "license": "ISC",
+  "name": "sorting-demonstration",
+  "description": "Visualization of different sorting slgorithms.",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nobYsDarling/sorting-demonstration.git"
+  },
+  "dependencies": {
+    "angular": "^1.6.10",
+    "angular-ui-bootstrap": "^2.5.6",
+    "bootstrap": "^4.1.0",
+    "jquery": "1.9.1",
+    "popper.js": "^1.14.0",
+    "grunt": "^1.0.2",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^3.3.0",
+    "highcharts": "^6.1.0",
+    "bootstrap-glyphicons": "1.0.0"
+  },
+  "devDependencies": {}
+}
