@@ -8,7 +8,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         concat: {
             options: {
-                separator: '\r\n ; \r\n '
+                separator: '\r\n'
             },
             styles: {
                 src: [
@@ -17,19 +17,30 @@ module.exports = function(grunt) {
                     'node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css',
                     'node_modules/highcharts/css/highcharts.css',
                     'node_modules/material-icons/css/material-icons.min.css',
+                    'node_modules/angular-material/angular-material.min.css',
                     'src/css/styles.css'
                 ],
                 dest: 'dist/styles.css'
             },
             scripts: {
+                options: {
+                    separator: '\r\n ; \r\n '
+                },
                 src: ['src/js/*.js', 'src/**/*.js'],
                 dest: 'dist/scripts.js'
             },
             vendor: {
+                options: {
+                    separator: '\r\n ; \r\n '
+                },
                 src: [
                     'node_modules/jquery/jquery.min.js',
                     'node_modules/bootstrap/dist/js/bootstrap.min.js',
                     'node_modules/angular/angular.min.js',
+                    'node_modules/angular-aria/angular-aria.min.js',
+                    'node_modules/angular-animate/angular-animate.min.js',
+                    'node_modules/angular-messages/angular-messages.min.js',
+                    'node_modules/angular-material/angular-material.min.js',
                     'node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js',
                     'node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js',
                     'node_modules/highcharts/js/highcharts.js',

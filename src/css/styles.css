@@ -1,6 +1,12 @@
+
+.sd-v-align {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 .sd-header {
     margin-bottom: 3rem;
-    position:      fixed;
     width:         100%;
     z-index:       100;
 }
@@ -25,6 +31,28 @@
 .sd-header .row .sd-controls {
     text-align:  center;
     white-space: nowrap;
+}
+
+.sd-init-dialog h2 {
+    margin: 1rem;
+}
+
+.sd-init-dialog h3 {
+    font-size: 1.5rem;
+    color: slateblue;
+}
+
+.sd-init-dialog .sd-slider-value {
+    font-size: 1.25rem;
+    color: indianred;
+}
+
+.sd-init-dialog hr {
+    margin: 0;
+}
+
+.sd-init-dialog .sd-form-container {
+    margin: 1rem 0 0 0;
 }
 
 .sd-main {

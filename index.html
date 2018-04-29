@@ -15,7 +15,7 @@
     <link href="dist/styles.css" rel="stylesheet">
 </head>
 
-<body ng-controller="SortingDemonstrationController">
+<body ng-controller="SortingDemonstrationController" ng-init="initDialog()">
 
 <div class="container-fluid">
     <header class="sd-header">
@@ -57,8 +57,11 @@
 
     <main role="main" class="sd-main">
         <div class="row">
-            <div class="col-sm-12">
-                <img style="width: inherit" src="https://dummyimage.com/800x600/7a6a6a/fff&text=1" />
+            <div class="col-sm-6">
+                <chart frames="bubble_sort_frames" algorithm="'bubble_sort'"></chart>
+            </div>
+            <div class="col-sm-6">
+                <chart frames="merge_sort_frames" algorithm="'merge_sort'"></chart>
             </div>
         </div>
 

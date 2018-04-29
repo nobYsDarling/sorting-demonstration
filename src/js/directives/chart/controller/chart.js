@@ -6,7 +6,7 @@ app.directive('chart', function () {
             frames: '=',
             algorithm: '='
         },
-        controller: function ($scope, $element, $attrs, $interval, $rootScope, randomStringService) {
+        controller: function ($scope, $element, $attrs, $interval, $rootScope, $filter, randomStringService) {
             const FRAME_SKIP = 10;
             const HASH_LENGTH = 10;
 
@@ -86,7 +86,7 @@ app.directive('chart', function () {
             };
 
             displayFrame();
-            console.log('chart-' + $scope.id);
+
             var myChart =
                 Highcharts.chart($element[0], {
                     minPadding: 0,
@@ -94,12 +94,19 @@ app.directive('chart', function () {
                     chart: {
                         type: 'column'
                     },
+                    plotOptions: {
+                        series: {
+                            pointPadding: 0,
+                            groupPadding: 0,
+                            borderWidth: 0
+                        }
+                    },
                     title: {
-                        text: $scope.algorithm
+                        text: $filter('humanize')($scope.algorithm)
                     },
                     series: [{
                         showInLegend: false,
-                        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                        data: $scope.frames[$scope.frame]
                     }],
                     xAxis: {
                         labels:
